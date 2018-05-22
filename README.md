@@ -104,8 +104,8 @@ This setting enables to run https server.
 
 Type: `Object<Object>`
 Props:
- - key `{String}` - Path to private key in PEM format.
- - cert `{String}` - Path to cert chains in PEM format.
+ - keyPath `{String}` - Path to private key in PEM format.
+ - certPath `{String}` - Path to cert chains in PEM format.
 
 Default: `false`
 
@@ -114,8 +114,8 @@ Default: `false`
  export.config = {
    // ...
    httpsConfig: {
-     key: '~/.keys/key.pem',
-     cert: '~/.certs/cert.pem'
+     keyPath: '~/.keys/key.pem',
+     certPath: '~/.certs/cert.pem'
    },
    // ...
  };
